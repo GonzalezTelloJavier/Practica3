@@ -105,13 +105,13 @@
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Rc-OVHq9EeuEudUR_axRxg"/>
         </children>
         <element xmi:type="uml:Class" href="EmpresaAgricola.uml#_Rc584Hq9EeuEudUR_axRxg"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Rc9nQXq9EeuEudUR_axRxg" x="34" y="32" width="361" height="201"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Rc9nQXq9EeuEudUR_axRxg" x="34" y="12" width="401" height="241"/>
       </children>
       <styles xmi:type="notation:TitleStyle" xmi:id="_HvYutHq9EeuEudUR_axRxg"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HvYutXq9EeuEudUR_axRxg"/>
     </children>
     <element xmi:type="uml:Package" href="EmpresaAgricola.uml#_HvVrYHq9EeuEudUR_axRxg"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HvYusXq9EeuEudUR_axRxg" x="220" width="461" height="281"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HvYusXq9EeuEudUR_axRxg" x="220" width="501" height="281"/>
   </children>
   <styles xmi:type="notation:StringValueStyle" xmi:id="_GA_6QXq9EeuEudUR_axRxg" name="diagram_compatibility_version" stringValue="1.4.0"/>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_GA_6Qnq9EeuEudUR_axRxg"/>

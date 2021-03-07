@@ -13,9 +13,11 @@
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_ZPOpsHq9EeuEudUR_axRxg" name="tiempoCosecha " visibility="private">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zW4WwH-ZEeuWJK9d6_UQ_w" value="*"/>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_ZpQ6UHq9EeuEudUR_axRxg" name="cantCosechaxtiempo" visibility="private">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1AGXUH-ZEeuWJK9d6_UQ_w" value="*"/>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_Z86PEHq9EeuEudUR_axRxg" name="costoPromedio" visibility="private">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
@@ -32,23 +34,23 @@
         </ownedParameter>
       </ownedOperation>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_ho08cHq-EeuEudUR_axRxg" name="eliminarPeriodo">
-        <ownedParameter xmi:type="uml:Parameter" xmi:id="_jacOkHq_EeuEudUR_axRxg">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
-        </ownedParameter>
         <ownedParameter xmi:type="uml:Parameter" xmi:id="_q3IpoHq_EeuEudUR_axRxg" name="i">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
         </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_PLTf8H-aEeuWJK9d6_UQ_w" name="eliminarPeriodo" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
       </ownedOperation>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_iK-nQHq-EeuEudUR_axRxg" name="costoPeriodo ">
-        <ownedParameter xmi:type="uml:Parameter" xmi:id="_yv9AAHq_EeuEudUR_axRxg">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
-        </ownedParameter>
         <ownedParameter xmi:type="uml:Parameter" xmi:id="_2vJZcHq_EeuEudUR_axRxg" name="i">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
         </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_ZbxDIH-aEeuWJK9d6_UQ_w" name="costoPeriodo" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </ownedParameter>
       </ownedOperation>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_qQYBEHq-EeuEudUR_axRxg" name="ganancia ">
-        <ownedParameter xmi:type="uml:Parameter" xmi:id="_7HfSsHq_EeuEudUR_axRxg">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_7HfSsHq_EeuEudUR_axRxg" name="ganancia" direction="return">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
         </ownedParameter>
         <ownedParameter xmi:type="uml:Parameter" xmi:id="_9i92oHq_EeuEudUR_axRxg" name="i">

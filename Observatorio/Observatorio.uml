@@ -18,7 +18,7 @@
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
       </ownedAttribute>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_LSYQIHrEEeuEudUR_axRxg" name="Desplazamiento">
-        <ownedParameter xmi:type="uml:Parameter" xmi:id="_SDL1kHrEEeuEudUR_axRxg">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_SDL1kHrEEeuEudUR_axRxg" direction="return">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
         </ownedParameter>
         <ownedParameter xmi:type="uml:Parameter" xmi:id="_Yq37QHrEEeuEudUR_axRxg" name="i">
@@ -33,7 +33,9 @@
       <ownedAttribute xmi:type="uml:Property" xmi:id="_S7H_oHrDEeuEudUR_axRxg" name="nombre" visibility="private">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_TUlBcHrDEeuEudUR_axRxg" name="localizaciones" visibility="private" type="_-CAbsHrCEeuEudUR_axRxg"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_TUlBcHrDEeuEudUR_axRxg" name="localizaciones" visibility="private" type="_-CAbsHrCEeuEudUR_axRxg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_52MuIH-aEeuWJK9d6_UQ_w" value="*"/>
+      </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_Twao4HrDEeuEudUR_axRxg" name="composicion" visibility="private">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedAttribute>
