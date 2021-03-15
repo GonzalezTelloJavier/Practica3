@@ -1,82 +1,205 @@
 package Pract3prob2;
 
-public class Fruta {
+import  java.util.ArrayList ;
+import  java.util.HashSet ;
 
-	private String nombre = "";
-	private float extension = 0F;
-	private String tiempoCosecha = "";
-	private float cantCosechaxtiempo = 0F;
-	private float costoPromedio = 0F;
-	private float precioVentaProm = 0F;
-
-	public Fruta() {
-
-		super();
-
-	}
-
-	public void agregarPeriodo(String periodo, float cantEstimada) {
-
-	}
-
-	public void eliminarPeriodo(boolean , int i) {
-
-	}
-
-	public void costoPeriodo (float , int i) {
-
-	}
-
-	public void ganancia (float , int i) {
+ clase  pública Fruta {
 	
+	public  Fruta ( String  nombre , float  extension , String  tiempoCosecha , float  cantCosechaxtiempo ,
+			float  costoPromedio , float  precioVentaProm ) {
+		super ();
+		esto . nombre = nombre;
+		esto . extension = extension;
+		esto . tiempoCosecha = tiempoCosecha;
+		esto . cantCosechaxtiempo = cantCosechaxtiempo;
+		esto . costoPromedio = costoPromedio;
+		esto . precioVentaProm = precioVentaProm;
+		
+	}
+	/ **
+	 * Descripción del nombre de la propiedad.
+	 * /
+	public  String nombre =  " " ;
+
+	/ **
+	 * Descripción de la extensión de la propiedad.
+	 * /
+	 extensión flotante pública =  0F ;
+
+	/ **
+	 * Descripción de la propiedad tiempoCosecha.
+	 * /
+	public  String tiempoCosecha;
+
+	/ **
+	 * Descripción de la propiedad cantCosechaxtiempo.
+	 * /
+	 carroza pública cantCosechaxtiempo;
+
+	/ **
+	 * Descripción de la propiedad costoPromedio.
+	 * /
+	 costoPromedio flotante público =  0F ;
+
+	/ **
+	 * Descripción del inmueble precioVentaProm.
+	 * /
+	 precioVentaProm flotante público =  0F ;
+
+	/ **
+	 * El constructor.
+	 * /
+
+	/ **
+	 * Descripción del método agregarPeriodo.
+	 * @param periodo
+	 * @param cantEstimada
+	 * /
+	private  ArrayList < String > periodo = new  ArrayList < String > ();
+	Private  ArrayList  < Float> cantEstimada =  new  ArrayList < Float > ();
+	
+	public  void  agregarPeriodo ( String  periodo , float  cantEstimada ) {
+		// Inicio del código de usuario para el método agregarPeriodo
+		esto . periodo . agregar (periodo);
+		esto . cantEstimada . añadir (cantEstimada);
+		// Fin del código de usuario
 	}
 
-	public String getNombre() {
-		return this.nombre;
+	/ **
+	 * Descripción del método eliminarPeriodo.
+	 * @param i
+	 * @return 
+	 * /
+	public  Boolean  eliminarPeriodo ( int  i ) {
+		// Inicio del código de usuario para el método eliminarPeriodo
+		Booleano eliminarPeriodo =  false ;
+		if (i > = 0  && i < this . periodo . size ()) {
+			esto . periodo . eliminar (i);
+			esto . cantEstimada . eliminar (i);
+			eliminarPeriodo = true ;
+		}
+		return eliminarPeriodo;
+
+		
 	}
 
-	public void setNombre(String newNombre) {
-		this.nombre = newNombre;
+	/ **
+	 * Descripción del método costoPeriodo.
+	 * @param i
+	 * @return 
+	 * /
+	 costoPeriodo flotante  público ( int i ) { 
+		
+		flotador costoPeriodo =  0F ;
+		if (i > = 0  && i < this . periodo . size ()) {
+			
+			costoPeriodo = esto . cantEstimada . obtener (i) * esto . costoPromedio;
+		}
+		return costoPeriodo;
 	}
 
-	public float getExtension() {
-		return this.extension;
+	/ **
+	 * Descripción del método de ganancia.
+	 * @param i
+	 * @return 
+	 * /
+	 ganancia flotante  pública ( int i ) { 
+		ganancia flotante =  0F ;
+		if (i > = 0 && i < this . periodo . size ()) {
+			ganancia = esto . precioVentaProm - ( this . cantEstimada . get (i) * this . costoPromedio);
+		}
+			
+			
+		ganancia de retorno ;
+
 	}
 
-	public void setExtension(float newExtension) {
-		this.extension = newExtension;
+	/ **
+	 * Devuelve nombre.
+	 * @return nombre
+	 * /
+	public  String  getNombre () {
+		devuelve  esto . nombre;
 	}
 
-	public String getTiempoCosecha() {
-		return this.tiempoCosecha;
+	/ **
+	 * Establece un valor para el atributo nombre. 
+	 * @param newNombre
+	 * /
+	public  void  setNombre ( String  newNombre ) {
+		esto . nombre = newNombre;
 	}
 
-	public void setTiempoCosecha(String newTiempoCosecha) {
-		this.tiempoCosecha = newTiempoCosecha;
+	/ **
+	 * Extensión de devoluciones.
+	 * @return extensión
+	 * /
+	public  float  getExtension () {
+		devuelve  esto . extensión;
 	}
 
-	public float getCantCosechaxtiempo() {
-		return this.cantCosechaxtiempo;
+	/ **
+	 * Establece un valor para la extensión del atributo. 
+	 * @param newExtension
+	 * /
+	public  void  setExtension ( float  newExtension ) {
+		esto . extension = newExtension;
 	}
 
-	public void setCantCosechaxtiempo(float newCantCosechaxtiempo) {
-		this.cantCosechaxtiempo = newCantCosechaxtiempo;
+	/ **
+	 * Devuelve tiempoCosecha.
+	 * @return tiempoCosecha
+	 * /
+	public  String  getTiempoCosecha () {
+		devuelve  esto . tiempoCosecha;
 	}
 
-	public float getCostoPromedio() {
-		return this.costoPromedio;
+	/ **
+	 * Devoluciones cantCosechaxtiempo.
+	 * @return cantCosechaxtiempo
+	 * /
+	public  float  getCantCosechaxtiempo () {
+		devuelve  esto . cantCosechaxtiempo;
 	}
 
-	public void setCostoPromedio(float newCostoPromedio) {
-		this.costoPromedio = newCostoPromedio;
+	/ **
+	 * Devuelve costoPromedio.
+	 * @return costoPromedio
+	 * /
+	public  float  getCostoPromedio () {
+		devuelve  esto . costoPromedio;
 	}
 
-	public float getPrecioVentaProm() {
-		return this.precioVentaProm;
+	/ **
+	 * Establece un valor al atributo costoPromedio. 
+	 * @param newCostoPromedio
+	 * /
+	public  void  setCostoPromedio ( float  newCostoPromedio ) {
+		esto . costoPromedio = newCostoPromedio;
 	}
 
-	public void setPrecioVentaProm(float newPrecioVentaProm) {
-		this.precioVentaProm = newPrecioVentaProm;
+	/ **
+	 * Devuelve precioVentaProm.
+	 * @return precioVentaProm
+	 * /
+	public  float  getPrecioVentaProm () {
+		devuelve  esto . precioVentaProm;
+	}
+
+	/ **
+	 * Establece un valor para atribuir precioVentaProm. 
+	 * @param newPrecioVentaProm
+	 * /
+	public  void  setPrecioVentaProm ( float  newPrecioVentaProm ) {
+		esto . precioVentaProm = newPrecioVentaProm;
+	}
+
+	@Anular
+	public  String  toString () {
+		return  " Fruta [nombre = "  + nombre +  " , extensión = "  + extensión +  " , tiempoCosecha = "  + tiempoCosecha
+				+  " , cantCosechaxtiempo = "  + cantCosechaxtiempo +  " , costoPromedio = "  + costoPromedio
+				+  " , precioVentaProm = "  + precioVentaProm +  " , periodo = "  + periodo +  " , cantEstimada = "  + cantEstimada
+				+   " ] " ;
 	}
 
 }

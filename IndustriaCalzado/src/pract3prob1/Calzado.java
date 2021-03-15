@@ -1,62 +1,88 @@
 package pract3prob1;
 
-public class Calzado {
+import  java.util.Arrays ;
 
-	private int clave = 0;
-	private String material = "";
-	private String troquel = "";
-	private int cantProdxDia  = 0;
-	private String colores  = "";
+public  class  Calzado {
 
-	public Calzado() {
-
-		super();
-
+	public  Calzado ( int  clave , String  material , String  troquel , int  cantidadxDia , String [] colores ) {
+		super ();
+		esto . clave = clave;
+		esto . material = material;
+		esto . troquel = troquel;
+		esto . cantidadxDia = cantidadxDia;
+		esto . colores = colores;
 	}
 
-	public float costoxLote(float  costoxUnida) {
-		float costoxLote = 0F;
-		return costoxLote;
-	}
 
-	public int getClave() {
-		return this.clave;
-	}
-
-	public void setClave(int newClave) {
-	    this.clave = newClave;
-	}
-
-	public String getMaterial() {
-		return this.material;
-	}
+	 clave int privada ;
+	 material de cuerda privado ;
+	privada  Cadena troquel;
+	privado  int cantidadxDia;
+	Private  String [] colores =  null ; {
+		
 	
-	public void setMaterial(String newMaterial) {
-	    this.material = newMaterial;
 	}
 
-	public String getTroquel() {
-		return this.troquel;
+
+	public  int  getClave () {
+		clave de retorno ;
 	}
 
-	public void setTroquel(String newTroquel) {
-	    this.troquel = newTroquel;
+
+	public  void  setClave ( int  clave ) {
+		esto . clave = clave;
 	}
 
-	public int getCantProdxDia () {
-		return this.cantProdxDia ;
+
+	public  String  getMaterial () {
+		material de devolución ;
 	}
+
+
+	public  void  setMaterial ( String  material ) {
+		esto . material = material;
+	}
+
+
+	public  String  getTroquel () {
+		retorno troquel;
+	}
+
+
+	public  void  setTroquel ( String  troquel ) {
+		esto .troquel = troquel;
+	}
+
+
+	public  int  getCantidadxDia () {
+		return cantidadxDia;
+	}
+
+
+	public  void  setCantidadxDia ( int  cantidadxDia ) {
+		esto . cantidadxDia = cantidadxDia;
+	}
+
+
+	 cadena pública [] getColores () {
+		colores de retorno ;
+	}
+
+
+	public  void  setColores ( String [] colores ) {
+		esto . colores = colores;
+	}
+
+
 	
-	public void setCantProdxDia (int newCantProdxDia ) {
-	    this.cantProdxDia  = newCantProdxDia ;
+	public  String  toString () {
+		return  " Calzado [clave = "  + clave +  " , material = "  + material +  " , troquel = "  + troquel +  " , cantidadxDia = "
+				+ cantidadxDia +  " , colores = "  +  Arrays . toString (colores) +  " ] " ;
 	}
 
-	public String getColores () {
-		return this.colores ;
-	}
 
-	public void setColores (String newColores ) {
-	    this.colores  = newColores ;
+	 costoPorLote public float  ( costoXUnidad doble ) { 
+		return ( float ) ( esto . cantidadxDia * costoXUnidad);
+		
 	}
-
 }
